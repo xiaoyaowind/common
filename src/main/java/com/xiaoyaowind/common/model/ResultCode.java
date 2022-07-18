@@ -1,10 +1,10 @@
 package com.xiaoyaowind.common.model;
 
-import com.xiaoyaowind.common.interfaces.StatusCode;
+import com.xiaoyaowind.common.interfaces.ExceptionCode;
 import lombok.Getter;
 
 @Getter
-public enum  ResultCode implements StatusCode {
+public enum ResultCode implements ExceptionCode {
     SUCCESS(1000, "请求成功"),
     FAILED(1001, "请求失败"),
     VALIDATE_ERROR(1002, "参数校验失败"),
