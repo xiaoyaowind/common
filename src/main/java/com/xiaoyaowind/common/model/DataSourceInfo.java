@@ -1,4 +1,4 @@
-package com.xiaoyaowind.model;
+package com.xiaoyaowind.common.model;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -41,4 +41,7 @@ public class DataSourceInfo {
 
     @ApiModelProperty("否需要开启特定规范字段")
     private boolean normalize;
+
+    @ApiModelProperty("要生成的包名称")
+    private String packageName;
 }

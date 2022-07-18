@@ -1,10 +1,10 @@
-package com.xiaoyaowind.controller;
+package com.xiaoyaowind.common.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.xiaoyaowind.exception.APIException;
-import com.xiaoyaowind.model.ResultCode;
-import com.xiaoyaowind.model.ResultSuccess;
+import com.xiaoyaowind.common.exception.APIException;
+import com.xiaoyaowind.common.model.ResultCode;
+import com.xiaoyaowind.common.model.ResultSuccess;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;

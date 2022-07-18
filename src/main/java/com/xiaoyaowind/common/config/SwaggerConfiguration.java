@@ -1,4 +1,4 @@
-package com.xiaoyaowind.config;
+package com.xiaoyaowind.common.config;
 
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import com.github.xiaoymin.knife4j.spring.extension.OpenApiExtensionResolver;

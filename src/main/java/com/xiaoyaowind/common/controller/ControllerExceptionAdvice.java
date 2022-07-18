@@ -1,8 +1,8 @@
-package com.xiaoyaowind.controller;
+package com.xiaoyaowind.common.controller;
 
-import com.xiaoyaowind.exception.APIException;
-import com.xiaoyaowind.model.ResultCode;
-import com.xiaoyaowind.model.ResultSuccess;
+import com.xiaoyaowind.common.exception.APIException;
+import com.xiaoyaowind.common.model.ResultCode;
+import com.xiaoyaowind.common.model.ResultSuccess;
 import org.springframework.validation.BindException;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.ExceptionHandler;

@@ -1,6 +1,6 @@
-package com.xiaoyaowind.model;
+package com.xiaoyaowind.common.model;
 
-import com.xiaoyaowind.interfaces.StatusCode;
+import com.xiaoyaowind.common.interfaces.StatusCode;
 import lombok.Getter;
 
 @Getter

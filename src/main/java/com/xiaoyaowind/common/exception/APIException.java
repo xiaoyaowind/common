@@ -1,7 +1,7 @@
-package com.xiaoyaowind.exception;
+package com.xiaoyaowind.common.exception;
 
-import com.xiaoyaowind.controller.AppCode;
-import com.xiaoyaowind.interfaces.StatusCode;
+import com.xiaoyaowind.common.interfaces.StatusCode;
+import com.xiaoyaowind.common.controller.AppCode;
 import lombok.Getter;
 
 @Getter

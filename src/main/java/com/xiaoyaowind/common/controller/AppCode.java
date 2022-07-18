@@ -1,6 +1,6 @@
-package com.xiaoyaowind.controller;
+package com.xiaoyaowind.common.controller;
 
-import com.xiaoyaowind.interfaces.StatusCode;
+import com.xiaoyaowind.common.interfaces.StatusCode;
 import lombok.Getter;
 
 @Getter

@@ -1,4 +1,4 @@
-package com.xiaoyaowind.util;
+package com.xiaoyaowind.common.util;
 
 import cn.hutool.core.io.FileUtil;
 import com.baomidou.mybatisplus.annotation.DbType;
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.po.TableFill;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
-import com.xiaoyaowind.model.DataSourceInfo;
+import com.xiaoyaowind.common.model.DataSourceInfo;
 import java.io.File;
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ public class GenerateCodeUtil {
         // 3、设置数据源
         mpg.setDataSource(setDataSource(dataSourceInfo));
         // 4、包的配置
-        mpg.setPackageInfo(setPackege(""));
+        mpg.setPackageInfo(setPackege(dataSourceInfo.getPackageName()));
         // 5、策略配置
         mpg.setStrategy(setStrategy(dataSourceInfo.getTables(),dataSourceInfo.isNormalize()));
         // 6、模板引擎配置
@@ -34,7 +34,7 @@ public class GenerateCodeUtil {
         // 7、数据执行
         mpg.execute(); //执行
         //将resource移动到对应地点中，进行覆盖处理
-        FileUtil.move(new File(dataSourceInfo.getClassPath()+"\\"+""+"\\mapping\\"),new File(dataSourceInfo.getResourcePath()+"\\mapping\\"),true);
+        FileUtil.move(new File(dataSourceInfo.getClassPath()+"\\"+dataSourceInfo.getPackageName()+"\\mapping\\"),new File(dataSourceInfo.getResourcePath()+"\\mapping\\"),true);
     }
 
     private static StrategyConfig setStrategy(String tables, boolean isNormalize) {
